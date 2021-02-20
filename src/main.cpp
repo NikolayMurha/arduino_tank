@@ -40,6 +40,13 @@ GMotor motorHead(RELAY2WIRE, MOTOR_HEAD_RIGHT, MOTOR_HEAD_LEFT, HIGH);
 GMotor motorGun(RELAY2WIRE, MOTOR_GUN_UP, MOTOR_GUN_DOWN, HIGH);
 GTimer attentionTimer(MS);
 
+void initPins();
+void initGamePad();
+void initMotors();
+void handleMotors();
+void handleHead();
+void handleLight();
+
 void setup() {  
   Serial.begin(9600);
   initPins();
